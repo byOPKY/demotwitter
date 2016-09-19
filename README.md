@@ -1,4 +1,4 @@
-.-Tener un contenedor vacio que acumule los mensajes
+##Tener un contenedor vacio que acumule los mensajes##
 1. Formulario: TextArea y Botón
 2. Evento para el click el botón
 3. Dentro del evento, obtener el valor del textarea
