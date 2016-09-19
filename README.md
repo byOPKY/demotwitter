@@ -12,9 +12,7 @@
   * app.js
   * simplegrip.css (lo busque y lo modifique)
 2. Enlace los documentos.
-3. En el documento index.html:
-  *
-4. En el documento main.css hice:
+3. En el documento main.css hice:
   * una funcion global window.onload
   * cree un evento addEventListener - click, para el boton
   * cree las variables: area; para llamar al textArea (document.getElementById) y para coger el valor le puse: .value
