@@ -7,9 +7,7 @@
 }
 body{
 	background-image: url("../img/wall.jpg");
-	height: 100%;
-	width:100%;
-	background-repeat: no-repeat;
+	background-size: 100%;
 	font-family: Verdana;
 	font-size: 14px;
 }

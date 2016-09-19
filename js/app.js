@@ -3,7 +3,7 @@ window.onload = function () {
 	var boton = document.getElementById("boton");
 	boton.addEventListener("click", function() {
 	    var area = document.getElementById("textArea").value;
-	    var demo = document.getElementById("demo")
+	    var demo = document.getElementById("demo");
 	   	var msj = document.createElement("div");
 	   	msj.innerHTML = area;
 	   	msj.classList.add("cuadro");
