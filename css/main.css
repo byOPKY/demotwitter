@@ -1,0 +1,28 @@
+.contenedor{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	background-color: blue;
+	color: white;
+}
+body{
+	background-image: url("../img/wall.jpg");
+	height: 100%;
+	width:100%;
+	background-repeat: no-repeat;
+	font-family: Verdana;
+	font-size: 14px;
+}
+h1{
+	font-weight: bold;
+	text-align: center;
+}
+.cuadro{
+	background-color: #FF3C3C;
+	padding: 2%;
+	text-align:center;
+}
+.cuadro2{
+	text-align:center;
+	background-color: #FF5C5C;
+}
