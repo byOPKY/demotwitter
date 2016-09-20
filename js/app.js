@@ -23,6 +23,19 @@ window.onload = function () {
 		boton.disabled = false;
 			if (textArea.value.length>=140){
 				contador.style.color = "red";
+				boton.disabled = true;
+				contador.innerHTML = 140 - textArea.value.length; 
+			} 
+			else if (textArea.value.length>=130){
+				contador.style.color = "blue";
+				contador.innerHTML = 140 - textArea.value.length; 
+			}
+			else if (textArea.value.length>=120){
+				contador.style.color = "purple";
+				contador.innerHTML = 140 - textArea.value.length; 
+			}
+			else if (textArea.value.length>=110){
+				contador.style.color = "black";
 				contador.innerHTML = 140 - textArea.value.length; 
 			}
 			else{
