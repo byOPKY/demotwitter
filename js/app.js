@@ -13,10 +13,28 @@ window.onload = function () {
 	   	var msj = document.createElement("div");
 	   	msj.innerHTML = area;
 	   	msj.classList.add("cuadro");
+	   	msj.classList.add("col-7")
 	   	demo.insertBefore(msj, demo.childNodes[0]);
 	   	
 	   	textArea.value= "";
 	   	contador.innerHTML = 140;
+
+	   	var fechaHora = new Date();
+		var horas = fechaHora.getHours();
+		var minutos = fechaHora.getMinutes();
+		var segundos = fechaHora.getSeconds();
+		var reloj = document.createElement("div");
+		if(horas < 10) { 
+			horas = '0' + horas; }
+  		if(minutos < 10) { 
+  			minutos = '0' + minutos; }
+  		if(segundos < 10) { 
+  			segundos = '0' + segundos; }
+		reloj.innerHTML = horas+':'+minutos+':'+segundos;
+		reloj.classList.add("col-4")
+		reloj.classList.add("cuadro3");
+	   	demo.insertBefore(reloj, demo.childNodes[1]);
+
 	});
 
 	textArea.addEventListener("keydown",function() {
@@ -41,15 +59,39 @@ window.onload = function () {
 			else{
 				contador.innerHTML= 140 - textArea.value.length;	
 			}
-			if(textArea.value.length==0){
-				boton.disabled = true;
-			}
+			//Inhabilita el boton en espacios vacios 
+			if( textArea.value == null || textArea.value.length == 0 || /^\s+$/.test(textArea.value) ) {
+ 				boton.disabled = true;
+				} 
+	});
 
-	});	
+	textArea.addEventListener("keydown", function(){
+		 if (textArea.scrollHeight > textArea.clientHeight) {
+    	textArea.style.height = textArea.scrollHeight + "px";}
+		else{
+			textArea.style.rows= textArea.clientHeight- textArea.scrollHeight
+		}
+		
+	});
+	
 
 }
 
+
+
+
 /*
+textArea.addEventListener("scroll", function(){
+		//textArea.setAttribute("rows","textArea.scrollHeight");
+		textArea.style.height = textArea.scrollHeight + "px";
+	});
+
+textArea.addEventListener("change", function(){
+		//textArea.setAttribute("rows","textArea.scrollHeight");
+		textArea.style.height = 2;
+	});
+
+
 window.onload = function () {
 	var boton = document.getElementById("boton");
 	boton.addEventListener("click", function(e) {

@@ -6,8 +6,9 @@
 	color: white;
 }
 body{
-	background-image: url("../img/wall.jpg");
+	background-image: url("../img/cves.jpg");
 	background-size: 100%;
+	background-repeat: repeat-y;
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: bold;
@@ -20,9 +21,25 @@ h1{
 	background-color: #FF3C3C;
 	padding: 2%;
 	text-align:center;
+	margin: 2% 0 ;
+	max-width: 100%;
+	word-wrap:break-word; +
+	overflow: hidden;
+}
+.cuadro3{
+	background-color: black;
+	color: white;
+	padding: 2%;
+	text-align:center;
+	margin: 2% 0 ;
+	max-width: 100%;
+	word-wrap:break-word; 
 }
 .cuadro2{
 	text-align:center;
 	background-color: white;
 	padding: 0 1%;
+}
+#textArea{
+	overflow: hidden;
 }
